@@ -1,4 +1,5 @@
 import discord
+import os
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -8,4 +9,5 @@ client = discord.Client(intents=intents)
 async def on_ready():
 	print("El bot esta encendido")
 
-client.run('')
+token = os.getenv('token') 
+client.run(token)
