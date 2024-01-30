@@ -8,4 +8,5 @@ client = discord.Client(intents=intents)
 async def on_ready():
 	print("El bot esta encendido")
 
-client.run(os.getenv('TOKEN'))
+token = os.getenv('TOKEN') 
+client.run(token)
