@@ -6,4 +6,4 @@ def healthCheck():
     return "OK" 
 
 if __name__ == "__main__":
-   app.run(port='3000')
+   app.run(PORT='3000')
